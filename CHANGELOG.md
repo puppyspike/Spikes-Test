@@ -9,6 +9,7 @@
 
 ### Other
 
+- Create release-drafer.yml [`6467f403`](https://github.com/puppyspike/Spikes-Test/commit/6467f4031cdd82eb0b9eb007df54629e17e72f86)
 - Delete action.yml [`28252753`](https://github.com/puppyspike/Spikes-Test/commit/28252753af27c488f332869d70867977dde17a7c)
 - Aufräumen [`0b693915`](https://github.com/puppyspike/Spikes-Test/commit/0b6939155f4424abeca82820a343071b911b4d6d)
 - Create tag-changelog-config.js [`0c999e50`](https://github.com/puppyspike/Spikes-Test/commit/0c999e50303dbf3a0bf98f9d2b7f1e61b6065b56)
