@@ -2,6 +2,13 @@
 
 ## unreleased
 
+### Other
+
+- aufräumen [`e6da2898`](https://github.com/puppyspike/Spikes-Test/commit/e6da2898960fc3ba8586e6be43c72ffffee65302)
+mal wieder
+
+## 0.0.9 - 2022-09-14
+
 ### Bug Fixes
 
 - Was auch immer [`d9af1358`](https://github.com/puppyspike/Spikes-Test/commit/d9af13587c7e912626da24384cb3839499079237)
