@@ -1,29 +1,25 @@
-# .github/workflows/update-changelog.yaml
-name: "Update Changelog"
+name: Generate Changelog
 
 on:
-  release:
-    types: [released]
+  push:
+    branches: [ main, master]
 
 jobs:
-  update:
+  changelog:
+    name: Update Changelog
     runs-on: ubuntu-latest
-
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
         with:
-          ref: ${{ github.event.release.target_commitish }}
-
-      - name: Update Changelog
-        uses: stefanzweifel/changelog-updater-action@v1
+          fetch-depth: 0
+      - name: Create changelog text
+        uses: loopwerk/tag-changelog@v1
         with:
-          latest-version: ${{ github.event.release.tag_name }}
-          release-notes: ${{ github.event.release.body }}
-
-      - name: Commit updated CHANGELOG
-        uses: stefanzweifel/git-auto-commit-action@v4
+          token: ${{ secrets.GITHUB_TOKEN }}
+          config_file: .github/tag-changelog-config.js
+      - name: Commit Changelog to repository
+        uses: stefanzweifel/git-auto-commit-action@v4.13.0
         with:
-          branch: ${{ github.event.release.target_commitish }}
-          commit_message: Update CHANGELOG
+          commit_message: 'docs(Changelog): Update Changelog'
           file_pattern: CHANGELOG.md
