@@ -9,6 +9,7 @@
 
 ### Other
 
+- Create tag-changelog-config.js [`0c999e50`](https://github.com/puppyspike/Spikes-Test/commit/0c999e50303dbf3a0bf98f9d2b7f1e61b6065b56)
 - Update generate_changelog.yml [`7bad200b`](https://github.com/puppyspike/Spikes-Test/commit/7bad200b2c30d26afc7cf212e5a10190e790e1c9)
 - Add files via upload [`70f50d19`](https://github.com/puppyspike/Spikes-Test/commit/70f50d19e41456c5596cef248bc58bc52a3def18)
 - Create action.yml [`a3b7c7db`](https://github.com/puppyspike/Spikes-Test/commit/a3b7c7db7673655d1eefe93a809cca64389a3b5d)
